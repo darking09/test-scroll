@@ -1,0 +1,12 @@
+.main {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}

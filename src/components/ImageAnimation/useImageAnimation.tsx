@@ -3,12 +3,14 @@ import TasksContext from '@/context/TasksContext';
 
 interface UseImageAnimationProps {
   style: any;
+  width: number;
+  height: number;
 }
 
 const classBase = 'scroll';
 
 export function useImageAnimation(props: UseImageAnimationProps) {
-  const { style } = props;
+  const { style, width, height } = props;
   const { scrollPercentage, direction } = useContext(TasksContext);
 
   const [classContainer , setClassContainer] = useState(style.container);

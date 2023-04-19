@@ -1,5 +1,6 @@
 export interface TaskContextType {
     scrollPercentage: number;
+    direction: string;
 }
 
 export interface ContextProps {

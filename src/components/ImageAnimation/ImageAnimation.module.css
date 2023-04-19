@@ -19,16 +19,34 @@
     opacity: 1;
 }
 
-.container.scroll-33 .wrapper .img:nth-child(2) {
+.container.scroll-down-33 .wrapper .img:nth-child(2) {
     opacity: 1; 
     transition: opacity opacity 2s ease-out;
     -webkit-transition: opacity 2s ease-out;  
     -moz-transition: opacity 2s ease-in-out;   
 }
 
-.container.scroll-66 .wrapper .img:nth-child(3) {
+.container.scroll-down-66 .wrapper .img:nth-child(3) {
     opacity: 1; 
     transition: opacity opacity 2s ease-out;
     -webkit-transition: opacity 2s ease-out;  
     -moz-transition: opacity 2s ease-in-out;  
+}
+
+.container.scroll-up-33 .wrapper .img:nth-child(2) {
+    opacity: 0; 
+    transition: opacity opacity 2s ease-out;
+    -webkit-transition: opacity 2s ease-out;  
+    -moz-transition: opacity 2s ease-in-out;   
+}
+
+.container.scroll-up-66 .wrapper .img:nth-child(3) {
+    opacity: 0; 
+    transition: opacity opacity 2s ease-out;
+    -webkit-transition: opacity 2s ease-out;  
+    -moz-transition: opacity 2s ease-in-out;  
+}
+
+.container.scroll-up-66 .wrapper .img:nth-child(2) {
+    opacity: 1;
 }

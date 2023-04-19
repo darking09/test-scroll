@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   const ref = useRef<HTMLBodyElement>(null);
   const { scrollPercentage } = useScrollPercentage({ ref });
-  console.log(scrollPercentage)
+
   return (
     <html lang="en">
       <body ref={ ref }>

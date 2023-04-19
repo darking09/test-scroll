@@ -9,4 +9,5 @@
   flex-direction: column;
   justify-content: center;
   gap: 50px;
+  position: static;
 }

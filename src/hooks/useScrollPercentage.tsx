@@ -4,25 +4,16 @@ interface UseScrollPercentageProps {
   ref: RefObject<HTMLElement>;
 }
 
-interface State {
-  scrollPercentage: number;
-}
-
 export function useScrollPercentage(props: UseScrollPercentageProps) {
   const { ref } = props;
-
-  const [state, setState] = useState<State>({
-    scrollPercentage: 0,
-  });
+  const [scrollPercentage, setScrollPercentage] = useState<number>(0);
 
     function handleScroll() {
         if (ref.current) {
             const { scrollTop, scrollHeight, clientHeight } = ref.current;
         
             const scrollPercent = (scrollTop / (scrollHeight - clientHeight)) * 100;
-            setState({
-                scrollPercentage: parseFloat(scrollPercent.toFixed(2)),
-            });
+            setScrollPercentage(parseFloat(scrollPercent.toFixed(2)));
         }
     }
 
@@ -48,5 +39,7 @@ export function useScrollPercentage(props: UseScrollPercentageProps) {
     };
   }, [ref]);
 
-  return state.scrollPercentage;
+  return {
+    scrollPercentage,
+  }
 }

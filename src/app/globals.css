@@ -9,13 +9,3 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
-
-/*body {
-  overflow: scroll;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}*/

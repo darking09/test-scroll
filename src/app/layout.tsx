@@ -2,6 +2,7 @@
 import './globals.css'
 import { useRef } from 'react';
 import TaskProvider from '@/context/TaskProvider'
+import Header   from '@/components/Header';
 import { useScrollPercentage } from '@/hooks/useScrollPercentage';
 
 /*export const metadata = {
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body ref={ ref }>
       <TaskProvider percentage={scrollPercentage}>
+        <Header />
         {children}
       </TaskProvider>
       </body>

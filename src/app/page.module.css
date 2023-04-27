@@ -4,11 +4,12 @@
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
-  height: 100vh;
+  height: calc(100vh - 60px);
   width: 80%;
   flex-direction: column;
   justify-content: center;
-  gap: 50px;
-  position: static;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 60px;
   scroll-behavior: smooth;
 }

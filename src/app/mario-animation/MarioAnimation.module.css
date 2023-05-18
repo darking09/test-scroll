@@ -19,6 +19,18 @@
     height: auto;
     border-radius: 10px 10px 10px 10px;
     background-color: black;
-    width: 50%;
+    width: 30%;
     padding: 5%;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        height: calc(100vh - 140px);
+    }
+
+    .frame {
+        width: 80%;
+    }
 }
